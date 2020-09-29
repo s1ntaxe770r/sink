@@ -1,2 +1,2 @@
-# -sink
+# Sink
 Personal dot file manager
