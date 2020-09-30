@@ -37,5 +37,15 @@ func syncf(d DotFile, repo string) error {
 }
 
 func main() {
+	defaultdirs := map[string]string{
+		"nvimconf": "~/.config/nvim/",
+		"awesome":  "~/.config/awesome",
+		"zshrc":    "~/",
+	}
+
+	configrepo := "~/dots"
+	nvimconf := DotFile{"init.vim", defaultdirs["nvimconf"]}
+	awesomeconf := DotFile{"rc.lua", defaultdirs["awesome"]}
+	zshrc := DotFile{".zshrc", defaultdirs["zshrc"]}
 
 }
